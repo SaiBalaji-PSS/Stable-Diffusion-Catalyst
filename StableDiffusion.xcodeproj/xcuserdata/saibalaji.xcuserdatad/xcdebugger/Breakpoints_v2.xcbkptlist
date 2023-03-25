@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6E0725D9-CFFD-4F22-BABC-7DBD99EA9607"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5758E446-1D37-4434-A21D-7BC97EC50692"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StableDiffusion/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5758E446-1D37-4434-A21D-7BC97EC50692 - 390dcc9e185cef16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StableDiffusion.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "StableDiffusion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saibalaji/Desktop/MVVMProjects/StableDiffusion/StableDiffusion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1260">
+               </Location>
+               <Location
+                  uuid = "5758E446-1D37-4434-A21D-7BC97EC50692 - 390dcc9e185cee8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StableDiffusion.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "StableDiffusion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saibalaji/Desktop/MVVMProjects/StableDiffusion/StableDiffusion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1276">
+               </Location>
+               <Location
+                  uuid = "5758E446-1D37-4434-A21D-7BC97EC50692 - 390dcc9e185cee6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StableDiffusion.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "StableDiffusion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saibalaji/Desktop/MVVMProjects/StableDiffusion/StableDiffusion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1276">
+               </Location>
+               <Location
+                  uuid = "5758E446-1D37-4434-A21D-7BC97EC50692 - 390dcc9e185ce982"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StableDiffusion.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "StableDiffusion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saibalaji/Desktop/MVVMProjects/StableDiffusion/StableDiffusion/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
