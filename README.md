@@ -6,11 +6,11 @@
 <img width="558" alt="Screenshot 2023-03-25 at 12 44 21 PM" src="https://user-images.githubusercontent.com/51410810/227760795-a9610764-0463-44d7-b892-bea1e65f2b14.png">
 <img width="558" alt="Screenshot 2023-03-25 at 1 49 31 PM" src="https://user-images.githubusercontent.com/51410810/227760804-50dc8238-2d03-458f-a8e5-d01bc6357133.png">
 
-#Features
+# Features
 * Image to Image conversion
 * Text to Image generation 
 * Multi-threaded to run both I2I and T2I at same time
 
-#Todo
+# Todo
 * Proper UI
 * Code clean up 
