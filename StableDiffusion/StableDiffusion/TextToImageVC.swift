@@ -8,6 +8,9 @@
 import UIKit
 import CoreML
 
+
+let dispatchQueue = DispatchQueue(label: "QueueIdentification2", qos: .background,attributes: .concurrent)
+
 class TextToImageVC: UIViewController {
 
     @IBOutlet weak var promptBox: UITextField!
@@ -52,7 +55,7 @@ class TextToImageVC: UIViewController {
             config.guidanceScale = 7.5
          //   config.strength = 0.5
             print(config.mode)
-            let dispatchQueue = DispatchQueue(label: "QueueIdentification2", qos: .userInteractive)
+      
             dispatchQueue.async {
                 do{
                     let images =  try pipeline.generateImages(configuration: config,progressHandler: { progress in

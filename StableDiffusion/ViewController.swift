@@ -85,7 +85,7 @@ class ViewController: UIViewController {
             config.guidanceScale = 7.5
             config.strength = 0.5
             print(config.mode)
-            let dispatchQueue = DispatchQueue(label: "QueueIdentification", qos: .userInteractive)
+           // let dispatchQueue = DispatchQueue(label: "QueueIdentification", qos: .userInteractive)
           
             dispatchQueue.async {
                 do{
