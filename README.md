@@ -14,3 +14,4 @@
 # Todo
 * Proper UI
 * Code clean up 
+* Proper documentation as there are no detailed documentation available on web
