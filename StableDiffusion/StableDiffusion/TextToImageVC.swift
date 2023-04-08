@@ -9,8 +9,6 @@ import UIKit
 import CoreML
 
 
-let dispatchQueue = DispatchQueue(label: "QueueIdentification2", qos: .background,attributes: .concurrent)
-
 class TextToImageVC: UIViewController {
 
     @IBOutlet weak var promptBox: UITextField!
@@ -33,61 +31,17 @@ class TextToImageVC: UIViewController {
     
 
     @IBAction func generateBtnPressed(_ sender: Any) {
-        let mlconfig = MLModelConfiguration()
-        mlconfig.computeUnits = .all
-        
-        if let t = promptBox.text{
-            prompt = t
-        }
-       
-        
-        do{
-            let pipeline = try StableDiffusionPipeline(resourcesAt: URL(string: "file:///Users/saibalaji/Documents/ios/coreml-stable-diffusion-v1-4/split_einsum/compiled/")!,configuration: mlconfig,disableSafety: true,reduceMemory: true)
-            
-            try pipeline.loadResources()
-            var config = StableDiffusionPipeline.Configuration(prompt: prompt)
-            
-          
-            print(config.prompt)
-            config.stepCount = 25
-            config.seed =  UInt32.random(in: 0...UInt32.max)
-            config.imageCount = 15
-            config.guidanceScale = 7.5
-         //   config.strength = 0.5
-            print(config.mode)
-      
-            dispatchQueue.async {
-                do{
-                    let images =  try pipeline.generateImages(configuration: config,progressHandler: { progress in
-                        print(progress.step)
-                        
-                        return true
-                    })
-                    
-                    
-                    DispatchQueue.main.async {
-                        
-                        //  self.resultImageView.image = UIImage(cgImage: image)
-                        self.generatedImage.removeAll()
-                        for i in images{
-                            if let i{
-                                
-                                self.generatedImage.append(i)
-                            }
-                        }
-                        self.imagesCV.reloadData()
-                        
-                    }
-                }
-                catch{
+        StableDiffusionService.shared.modelPath = "file:///Users/saibalaji/Documents/ios/coreml-stable-diffusion-v1-4/split_einsum/compiled/"
+        StableDiffusionService.shared.textToImageGenerator(prompt: promptBox.text,computeUnits: .all) { error , images  in
+            DispatchQueue.main.async {
+                if let error{
                     print(error)
                 }
+                if let images{
+                    self.generatedImage = images
+                    self.imagesCV.reloadData()
+                }
             }
-            
-          
-        }
-        catch{
-            print(error)
         }
     }
     

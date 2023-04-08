@@ -36,6 +36,7 @@
 		E42B0BE129CED7DA00CC945E /* TextToImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B0BE029CED7DA00CC945E /* TextToImageVC.swift */; };
 		E42B0BE429CED88500CC945E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B0BE229CED88500CC945E /* ImageCell.swift */; };
 		E42B0BE529CED88500CC945E /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42B0BE329CED88500CC945E /* ImageCell.xib */; };
+		E479CD7F29E05DA500D5D80F /* StableDiffusionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479CD7E29E05DA500D5D80F /* StableDiffusionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		E42B0BE029CED7DA00CC945E /* TextToImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToImageVC.swift; sourceTree = "<group>"; };
 		E42B0BE229CED88500CC945E /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		E42B0BE329CED88500CC945E /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		E479CD7E29E05DA500D5D80F /* StableDiffusionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StableDiffusionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		E42B0B9F29CEB4BB00CC945E /* StableDiffusion */ = {
 			isa = PBXGroup;
 			children = (
+				E479CD7D29E05D8C00D5D80F /* Service */,
 				E42B0BB529CEB6F600CC945E /* StableDiffusion */,
 				E42B0BB429CEB4EE00CC945E /* StableDiffusion.entitlements */,
 				E42B0BA029CEB4BB00CC945E /* AppDelegate.swift */,
@@ -160,6 +163,14 @@
 				E42B0BCB29CEB6F600CC945E /* BPETokenizer+Reading.swift */,
 			);
 			path = tokenizer;
+			sourceTree = "<group>";
+		};
+		E479CD7D29E05D8C00D5D80F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E479CD7E29E05DA500D5D80F /* StableDiffusionService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 				E42B0BA529CEB4BB00CC945E /* ViewController.swift in Sources */,
 				E42B0BA129CEB4BB00CC945E /* AppDelegate.swift in Sources */,
 				E42B0BD129CEB6F600CC945E /* TorchRandomSource.swift in Sources */,
+				E479CD7F29E05DA500D5D80F /* StableDiffusionService.swift in Sources */,
 				E42B0BCE29CEB6F600CC945E /* ResourceManaging.swift in Sources */,
 				E42B0BDD29CEB6F600CC945E /* StableDiffusionPipeline.swift in Sources */,
 				E42B0BD929CEB6F600CC945E /* StableDiffusionPipeline+Resources.swift in Sources */,
