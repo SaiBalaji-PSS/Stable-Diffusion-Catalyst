@@ -14,4 +14,4 @@
 # Todo
 * Proper UI
 * Code clean up 
-* Proper documentation as there are no detailed documentation available on web
+* Auto image resizing to 512X512 in Image to Image conversion
